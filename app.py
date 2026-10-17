@@ -212,19 +212,6 @@ if st.button("Analyze Sentiment", type="primary"):
             "Confidence is the model's estimated probability, "
             "not a guarantee that the prediction is correct."
         )
-
-# -------------------------------
-# 9. Model information
-# -------------------------------
-with st.expander("How does this project work?"):
-    st.write("""
-    1. Training reviews are labelled Positive or Negative.
-    2. TF-IDF converts text into numerical features.
-    3. Logistic Regression learns patterns from the training data.
-    4. The trained model predicts sentiment for a new review.
-    5. The held-out test set provides a basic accuracy estimate.
-    """)
-
 st.divider()
 
 st.caption("Built with Python, Scikit-learn and Streamlit")
